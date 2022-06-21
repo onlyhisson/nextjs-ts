@@ -158,7 +158,7 @@ export const Header = () => {
     <HeaderWrapper>
       <div className="header-s header-l">
         <img src={`/images/logo/logo_wh.png`} alt="logo" />
-        <Link href="/news">
+        <Link href="/">
           <a className="h-menu-item">
             <Span>뉴스 / 공지</Span>
           </a>
