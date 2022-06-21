@@ -9,6 +9,8 @@ import {
 import { createWrapper, Context, HYDRATE } from "next-redux-wrapper";
 import themeReducer, { TTheme } from "../features/theme/themeSlice";
 import counterReducer from "../features/counter/counterSlice";
+import newsReducer from "../features/news/newsSlice";
+import advertisesReducer from "../features/advertises/advertisesSlice";
 
 export interface State {
   theme: TTheme;
@@ -40,6 +42,8 @@ export const store = configureStore({
   reducer: {
     theme: themeReducer,
     counter: counterReducer,
+    news: newsReducer,
+    advertises: advertisesReducer,
   },
 });
 
